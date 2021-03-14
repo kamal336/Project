@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <form action="" name="form">
+            <input type="text" name="display" value="" class="form-control" id="input" placeholder="0">
+            <div class="btn-area">
+                <div class="line">
+                    <input type="button" name="btn" value="7" class="btn btn-primary" onClick={calculate(this.value)}>
+                    <input type="button" name="btn" value="8" class="btn btn-primary" onClick={calculate(this.value)}>
+                    <input type="button" name="btn" value="9" class="btn btn-primary" onClick={calculate(this.value)}>
+                    <input type="button" name="btn" value="*" class="btn btn-warning" onClick={calculate(this.value)}>
+                </div>
+
+                <div class="line">
+                    <input type="button" name="btn" value="4" class="btn btn-primary" onClick={calculate(this.value)}>
+                    <input type="button" name="btn" value="5" class="btn btn-primary" onClick={calculate(this.value)}>
+                    <input type="button" name="btn" value="6" class="btn btn-primary" onClick={calculate(this.value)}>
+                    <input type="button" name="btn" value="/" class="btn btn-warning" onClick={calculate(this.value)}>
+                </div>
+
+                <div class="line">
+                    <input type="button" name="btn" value="1" class="btn btn-primary" onClick={calculate(this.value)}>
+                    <input type="button" name="btn" value="2" class="btn btn-primary" onClick={calculate(this.value)}>
+                    <input type="button" name="btn" value="3" class="btn btn-primary" onClick={calculate(this.value)}>
+                    <input type="button" name="btn" value="-" class="btn btn-warning" onClick={calculate(this.value)}>
+                </div>
+
+                <div class="line">
+                    <input type="button" name="btn" value="0" class="btn btn-primary" onClick={calculate(this.value)}>
+                    <input type="button" name="btn" value="00" class="btn btn-primary" onClick={calculate(this.value)}>
+                    <input type="button" name="btn" value="." class="btn btn-primary" onClick={calculate(this.value)}>
+                    <input type="button" name="btn" value="+" class="btn btn-warning" onClick={calculate(this.value)}>
+                </div>
+
+                <div class="last">
+                    <input type="button" name="btn" value="C" class="btn btn-warning" onClick="display.value = null">
+                    <input type="button" name="btn" value="=" class="btn btn-warning" onClick="display.value = eval(display.value)">
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+const calculate = x => form.display.value = form.display.value + x;
